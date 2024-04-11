@@ -1,1 +1,1 @@
-articles
+[{"title":"articulo 1","description":"Descripcion del articulo 1","price":1500,"thumnail":"articulo1.jpg","code":"ART0001","stock":15,"id":1}]

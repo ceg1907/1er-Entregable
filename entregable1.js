@@ -12,13 +12,12 @@ class ProductManager {
     );
     if (ARTICLE_VALIDATE) {
       let id = this.incrementID++;
-      let products = this.products;
 
       if (ARTICLE_EXIST) {
         console.log('El producto ya existe');
       } else {
         ARTICLE_VALIDATE = { ...ARTICLE_VALIDATE, id: id };
-        products.push(ARTICLE_VALIDATE);
+        this.products.push(ARTICLE_VALIDATE);
         console.log('agregado con exito');
       }
     } else {
@@ -48,8 +47,3 @@ new ProductManager().addProduct({
   code: 'ART0001',
   stock: 15,
 });
-
-// new ProductManager().getProducts();
-
-// let productsFilterCode = new ProductManager().getArticlesbyID('ART0001');
-// console.log(productsFilterCode);
